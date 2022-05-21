@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="paper_format_mo_barcode" model="report.paperformat">
+        <field name="name">MO Barcode Labels</field>
+        <field name="default" eval="True"/>
+        <field name="format">custom</field>
+        <field name="page_height">62</field>
+        <field name="page_width">160</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">1</field>
+        <field name="margin_bottom">1</field>
+        <field name="margin_left">3</field>
+        <field name="margin_right">3</field>
+        <field name="header_line" eval="False" />
+        <field name="header_spacing">0</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <record id="action_mo_barcode_report" model="ir.actions.report">
+        <field name="name">Productie order label</field>
+        <field name="model">mrp.production</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">custom_sjablonen_coolen_engineering.report_mo_label</field>
+        <field name="report_file">custom_sjablonen_coolen_engineering.report_mo_label</field>
+        <field name="paperformat_id" ref="paper_format_mo_barcode"/>
+        <field name="binding_model_id" ref="mrp.model_mrp_production"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_mo_label">
+        <t t-call="web.basic_layout">
+            <t t-foreach="docs" t-as="o">
+                <div class="page">
+                    <div style="width: 30mm;float:left;min-height: 70mm;position:relative;" class="text-center">
+<!--                        <div style="-webkit-transform: rotate(90deg);page-break-inside: avoid;min-height: 30mm;min-width: 70mm;position: absolute;top:19mm;right:-19mm;margin: 5px;">-->
+                        <div style="-webkit-transform: rotate(90deg);page-break-inside: avoid;min-height: 30mm;min-width: 62mm;position: absolute;top:17mm;right:-15mm;margin: 5px;font-size: 13px;">
+                            <p style="margin-top: 0px !important;margin-bottom: 5px !important;line-height: 17px;"><span t-field="o.product_id.name"/></p>
+                            <img t-att-src="'/report/barcode/?humanreadable=1&amp;type=%s&amp;height=100&amp;width=600&amp;value=%s' % ('Code128', o.product_id.barcode)" style="height: 15mm;width: 62mm;"/>
+                        </div>
+                    </div>
+                    <div style="width: 112mm;float:left;border-left: 1px dashed black;border-right: 1px dashed black;min-height: 70mm;" class="text-center">
+                        <p style="font-size: 50px;margin; 5px;"><span t-field="o.name"/></p>
+                        <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)" style="width:100%;height:100px;" alt="Barcode"/>
+                        <p style="font-size: 24px;">Aantal: <span t-field="o.product_qty"/> <span t-field="o.product_uom_id"/></p>
+                    </div>
+                    <div style="width: 30mm;float:left;min-height: 70mm;position:relative;" class="text-center">
+<!--                        <div style="-webkit-transform: rotate(-90deg);page-break-inside: avoid;min-height: 30mm;min-width: 70mm;position: absolute;top:19mm;left:-19mm;margin: 5px;">-->
+                        <div style="-webkit-transform: rotate(-90deg);page-break-inside: avoid;min-height: 30mm;min-width: 62mm;position: absolute;top:17mm;left:-15mm;margin: 5px;font-size: 13px;">
+                            <p style="margin-top: 0px !important;margin-bottom: 5px !important;line-height: 17px;"><span t-field="o.product_id.name"/></p>
+                            <img t-att-src="'/report/barcode/?humanreadable=1&amp;type=%s&amp;height=100&amp;width=600&amp;value=%s' % ('Code128', o.product_id.barcode)" style="height: 15mm;width: 62mm;"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+
+</odoo>

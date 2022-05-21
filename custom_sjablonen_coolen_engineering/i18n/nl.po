@@ -1,0 +1,355 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_sjablonen_coolen_engineering
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20211229\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-20 12:58+0000\n"
+"PO-Revision-Date: 2022-01-20 14:06+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.styles_company_report
+msgid ""
+"&amp;.o_report_layout_custom {\n"
+"                    h1, h2, h3, h4, h5, h6 {\n"
+"                        color:"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.styles_company_report
+msgid ""
+";\n"
+"                    }\n"
+"                    #informations strong {\n"
+"                        color:"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.styles_company_report
+msgid ""
+";\n"
+"                    }\n"
+"                    #total strong{\n"
+"                        color:"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.styles_company_report
+msgid ""
+";\n"
+"                    }\n"
+"                    table {\n"
+"                        thead {\n"
+"                            color:"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid ""
+"<br/>\n"
+"                                            <strong>Incoterm</strong>"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<span><strong>Order nr.</strong></span>"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+msgid ""
+"<span><strong>PO nr.</strong></span>\n"
+"                                        <br/>"
+msgstr ""
+"<span><strong>Inkooporder nr.</strong></span>\n"
+"                                        <br/>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+msgid "<span><strong>Packing Slip Number</strong></span><br/>"
+msgstr "<span><strong>Pakbon nr.</strong></span><br/>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<span><strong>Quotation nr.</strong></span>"
+msgstr "<strong>Offerte nr.</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+msgid ""
+"<span><strong>RFQ nr.</strong></span>\n"
+"                                        <br/>"
+msgstr ""
+"<span><strong>Inkooporder nr.</strong></span>\n"
+"                                        <br/>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<strong>Delivery Address</strong>"
+msgstr "<strong>Leveradres</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+msgid "<strong>Delivery Date</strong>"
+msgstr "<strong>Leverdatum</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+msgid "<strong>Delivery condition</strong>"
+msgstr "<strong>Leveringsconditie</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+msgid "<strong>Delivery slip</strong>"
+msgstr "<strong>Pakbon</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+msgid ""
+"<strong>Invoice nr.</strong><br/>\n"
+"                                        <strong>Expiring Date</strong><br/>"
+msgstr ""
+"<strong>Factuur nr.</strong><br/>\n"
+"                                        <strong>Vervaldatum</strong><br/>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+msgid "<strong>Invoice</strong>"
+msgstr "<strong>Factuur</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<strong>Order</strong>"
+msgstr "<strong>Verkooporder</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+msgid "<strong>Order</strong><br/>"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<strong>Our reference</strong>"
+msgstr "<strong>Onze referentie</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<strong>Payment Term</strong>"
+msgstr "<strong>Betalingsconditie</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+msgid "<strong>Purchase Order</strong>"
+msgstr "<strong>Inkooporder</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<strong>Quotation</strong>"
+msgstr "<strong>Offerte</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+msgid "<strong>RFQ</strong>"
+msgstr "<strong>Offerteaanvraag</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotaal</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<strong>Total</strong>"
+msgstr "<strong>Totaal</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "<strong>Your Reference</strong>"
+msgstr "<strong>Uw referentie</strong>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model:ir.model,name:custom_sjablonen_coolen_engineering.model_res_currency
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "Delivery date:"
+msgstr "Leverdatum:"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "Description"
+msgstr "Omschrijving"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model:ir.model.fields,field_description:custom_sjablonen_coolen_engineering.field_res_currency__display_name
+msgid "Display Name"
+msgstr "Schermnaam"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+msgid ""
+"General terms and conditions: All our deliveries are subject to our terms and conditions.<br/>\n"
+"                                    These can be found at: https://www.coolen-engineering.eu/algemene-voorwaarden/"
+msgstr ""
+"Op al onze leveringen zijn onze algemene voorwaarden van toepassing.<br/>\n"
+"                                    Deze vindt u op: https://www.coolen-engineering.eu/algemene-voorwaarden/"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid ""
+"General terms and conditions: All our deliveries are subject to our terms and conditions.<br/>\n"
+"                                These can be found at: https://www.coolen-engineering.eu/algemene-voorwaarden/"
+msgstr ""
+"Op al onze leveringen zijn onze algemene voorwaarden van toepassing.<br/>\n"
+"                                Deze vindt u op: https://www.coolen-engineering.eu/algemene-voorwaarden/"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.external_layout_custom
+msgid ""
+"IBAN: NL58INGB0007712901<br/>\n"
+"                        BIC: INGBNL2A"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model:ir.model.fields,field_description:custom_sjablonen_coolen_engineering.field_res_currency__id
+msgid "ID"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+msgid ""
+"Invoice date<br/>\n"
+"                                        Invoice Reference"
+msgstr ""
+"Factuurdatum<br/>\n"
+"                                        Factuur referentie"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.external_layout_custom
+msgid ""
+"KVK: 62402935<br/>\n"
+"                        BTW: NL854804006.B01"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model:ir.model.fields,field_description:custom_sjablonen_coolen_engineering.field_res_currency____last_update
+msgid "Last Modified on"
+msgstr "Laatst gewijzigd op"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.external_layout_custom
+msgid "Logo"
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "Net amount"
+msgstr "Netto"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+msgid "Order"
+msgstr "Referentie"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+msgid "Order date<br/>"
+msgstr "Order datum<br/>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid ""
+"Order date<br/>\n"
+"                                        Order"
+msgstr ""
+"Order datum<br/>\n"
+"                                        Referentie"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.external_layout_custom
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Pagina: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "Pos."
+msgstr ""
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+msgid "Prefered delivery date:"
+msgstr "Gewenste leverdatum:"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "Price per unit"
+msgstr "Prijs per stuk"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_delivery_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_saleorder_document
+msgid "Quantity"
+msgstr "Aantal"
+
+#. module: custom_sjablonen_coolen_engineering
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchaseorder_document
+#: model_terms:ir.ui.view,arch_db:custom_sjablonen_coolen_engineering.report_purchasequotation_document
+msgid "Taxes"
+msgstr "BTW"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="action_stock_picking_product_barcode_report" model="ir.actions.report">
+        <field name="name">Product Barcode label</field>
+        <field name="model">stock.picking</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">custom_sjablonen_coolen_engineering.report_stock_product_barcode</field>
+        <field name="report_file">custom_sjablonen_coolen_engineering.report_stock_product_barcode</field>
+        <field name="paperformat_id" ref="paper_format_barcode_label"/>
+        <field name="binding_model_id" ref="stock.model_stock_picking"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_stock_product_barcode">
+        <t t-call="web.basic_layout">
+            <t t-foreach="docs" t-as="picking">
+                <t t-foreach="picking.move_ids_without_package.mapped('product_id')" t-as="product">
+                    <div class="page">
+                        <t t-call="custom_sjablonen_coolen_engineering.product_barcode_template"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

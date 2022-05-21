@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="external_layout_custom">
+        <div t-attf-class="header o_company_#{company.id}_layout o_report_layout_custom" t-att-style="report_header_style">
+            <div class="float-right" style="padding-top: 5%;margin:auto;">
+                <h4 class="mt0 text-right" t-field="company.report_header"/>
+            </div>
+            <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo" style="width: 300px;padding-top: 5%;"/>
+        </div>
+
+        <div t-attf-class="o_company_#{company.id}_layout article o_report_layout_custom" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+            <t t-call="web.address_layout"/>
+            <t t-raw="0"/>
+        </div>
+
+        <div t-attf-class="o_company_#{company.id}_layout footer o_report_layout_custom">
+            <div class="row mb-3" style="font-size: 12px !important;">
+                <div class="col-3" style="border-left: 1px solid black;">
+                    <div>
+                        <strong t-field="company.partner_id.name"/>
+                    </div>
+                    <span t-field="company.partner_id"
+                        t-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'/>
+                </div>
+                <div class="col-3" style="border-left: 1px solid black;">
+                    <p>
+                        <t t-if="company.phone">
+                            <span t-field="company.phone"/><br/>
+                        </t>
+                        <t t-if="company.website">
+                            <span t-field="company.website"/><br/>
+                        </t>
+                        <span t-field="company.email"/>
+                    </p>
+                </div>
+                <div class="col-3" style="border-left: 1px solid black;">
+                    <p>
+                        KVK: 62402935<br/>
+                        BTW: NL854804006.B01
+                    </p>
+                </div>
+                <div class="col-3" style="border-left: 1px solid black;border-right: 1px solid black;">
+                    <p>
+                        IBAN: NL58INGB0007712901<br/>
+                        BIC: INGBNL2A
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="font-size: 12px !important;">
+                <div class="col-11 text-right">
+                    Page: <span class="page"/> / <span class="topage"/>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="styles_company_report" inherit_id="web.styles_company_report">
+        <xpath expr="//t/t[9]" position="after">
+            <t t-elif="layout == 'custom_sjablonen_coolen_engineering.external_layout_custom'">
+                <t t-set="primary" t-value="company.primary_color or '#c24141'" />
+                <t t-set="secondary" t-value="company.secondary_color or '#333333'" />
+                &amp;.o_report_layout_custom {
+                    h1, h2, h3, h4, h5, h6 {
+                        color: <t t-esc='primary'/>;
+                    }
+                    #informations strong {
+                        color: <t t-esc='secondary'/>;
+                    }
+                    #total strong{
+                        color: <t t-esc='primary'/>;
+                    }
+                    table {
+                        thead {
+                            color: <t t-esc='secondary'/>;
+                        }
+                    }
+                }
+            </t>
+        </xpath>
+    </template>
+
+</odoo>
