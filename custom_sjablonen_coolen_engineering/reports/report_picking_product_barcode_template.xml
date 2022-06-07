@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="action_stock_picking_product_barcode_report" model="ir.actions.report">
-        <field name="name">Product Barcode label</field>
+        <field name="name">Product label</field>
         <field name="model">stock.picking</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">custom_sjablonen_coolen_engineering.report_stock_product_barcode</field>

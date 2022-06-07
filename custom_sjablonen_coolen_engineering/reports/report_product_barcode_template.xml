@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="paper_format_barcode_label" model="report.paperformat">
-        <field name="name">Product Barcode Labels</field>
+        <field name="name">Product label</field>
         <field name="default" eval="True"/>
         <field name="format">custom</field>
         <field name="page_height">30</field>
@@ -18,7 +18,7 @@
     </record>
 
     <record id="action_product_product_barcode_report" model="ir.actions.report">
-        <field name="name">Product Barcode label</field>
+        <field name="name">Product label</field>
         <field name="model">product.product</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">custom_sjablonen_coolen_engineering.report_product_product_barcode</field>
@@ -29,7 +29,7 @@
     </record>
 
     <record id="action_product_template_barcode_report" model="ir.actions.report">
-        <field name="name">Product Barcode label</field>
+        <field name="name">Product label</field>
         <field name="model">product.template</field>
         <field name="report_type">qweb-pdf</field>
         <field name="report_name">custom_sjablonen_coolen_engineering.report_product_template_barcode</field>
@@ -41,8 +41,8 @@
 
     <template id="product_barcode_template">
         <div style="width: 62mm;height: 30mm;" class="text-center">
-            <p style="width: 100%;text-align: center;font-size: 16px;margin; 5px;"><span t-field="product.name"/></p>
-            <img t-att-src="'/report/barcode/?humanreadable=1&amp;type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', product.barcode, 500, 60)" style="width:100%;height:60px;" alt="Barcode"/>
+            <p style="width: 100%;text-align: center;font-size: 14px;line-height: 16px;margin-bottom: 5px;"><span t-field="product.name"/></p>
+            <img t-att-src="'/report/barcode/?humanreadable=1&amp;type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', product.barcode, 500, 60)" style="width:100%;height:50px;" alt="Barcode"/>
         </div>
     </template>
 
